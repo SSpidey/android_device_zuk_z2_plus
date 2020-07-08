@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Camera
+PRODUCT_PACKAGES += \
+    CameraGo
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilt/etc/permissions/privapp-permissions-mixplorer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mixplorer.xml
