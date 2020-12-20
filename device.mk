@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
 
 # MiCalculator
 PRODUCT_PACKAGES += \
+    GalleryGo \
     MiCalculator
 
 # MiXplorer
