@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The dotOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_z2_plus.mk
+    $(LOCAL_DIR)/dot_z2_plus.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_z2_plus-user \
-    lineage_z2_plus-userdebug \
-    lineage_z2_plus-eng
+    dot_z2_plus-user \
+    dot_z2_plus-userdebug \
+    dot_z2_plus-eng
