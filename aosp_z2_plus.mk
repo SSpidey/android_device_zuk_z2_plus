@@ -39,9 +39,9 @@ TARGET_VENDOR_DEVICE_NAME := z2_plus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="z2_plus" \
     PRODUCT_NAME="z2_plus" \
-    PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 3.1.117_171110 release-keys"
+    PRIVATE_BUILD_DESC="z2_plus-user 8.0.0 OPR1.170623.032 4.0.199_181018 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "ZUK/z2_plus/z2_plus:7.0/NRD90M/3.1.117_171110:user/release-keys"
+BUILD_FINGERPRINT := "ZUK/z2_plus/z2_plus:8.0.0/OPR1.170623.032/4.0.199_181018:user/release-keys"
 
 TARGET_VENDOR := zuk
