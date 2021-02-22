@@ -1,5 +1,5 @@
-# Copyright (C) 2013-2016, The CyanogenMod Project
-# Copyright (C) 2017, The LineageOS Project
+#
+# Copyright (C) 2018 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,11 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-# Inherit some common DotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_z2_plus
+PRODUCT_NAME := aosp_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_BRAND := ZUK
 PRODUCT_MODEL := Z2 Plus
