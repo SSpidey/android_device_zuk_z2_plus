@@ -73,7 +73,8 @@ PRODUCT_PACKAGES += \
     CalendarStorage \
     LatinIMEGooglePrebuilt \
     GoogleDeskClock \
-    smsorganizer 
+    smsorganizer \
+    Messaging
 
 #Vanced Manager
 PRODUCT_PACKAGES += \
