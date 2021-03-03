@@ -61,6 +61,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RetroMusic
 
+# Recorder
+PRODUCT_PACKAGES += \
+    KimciRecorder \
+    RemovePackages
+
+# Prebuilts
+PRODUCT_PACKAGES += \
+    GalleryGo \
+    smsorganizer 
+
+#Vanced Manager
+PRODUCT_PACKAGES += \
+    Vanced
+
 #FirefoxLite
 PRODUCT_PACKAGES += \
     FirefoxLite
