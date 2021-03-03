@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_z2_plus.mk
+    $(LOCAL_DIR)/bliss_z2_plus.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_z2_plus-user \
-    aosp_z2_plus-userdebug \
-    aosp_z2_plus-eng
+    bliss_z2_plus-user \
+    bliss_z2_plus-userdebug \
+    bliss_z2_plus-eng
