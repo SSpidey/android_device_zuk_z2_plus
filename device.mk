@@ -13,13 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file sets variables that control the way modules are built
-# thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
-# definition file).
-#
+DEVICE_PATH := device/xiaomi/ginkgo
 
 # Inherit from vendor
 $(call inherit-product-if-exists, vendor/zuk/z2_plus/z2_plus-vendor.mk)
@@ -35,9 +29,29 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+
+
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/prebuilt/etc/permissions/privapp-permissions-mixplorer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mixplorer.xml
+# MiCalculator
+PRODUCT_PACKAGES += \
+    MiCalculator
+
+# MiXplorer
+PRODUCT_PACKAGES += \
+    MiXplorer
+# MiXArchive
+PRODUCT_PACKAGES += \
+    MiXArchive
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.zuk.rc
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
+
+# Retro
+PRODUCT_PACKAGES += \
+    RetroMusic
