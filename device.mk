@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/xiaomi/ginkgo
+DEVICE_PATH := device/zuk/z2_plus
 
 # Inherit from vendor
 $(call inherit-product-if-exists, vendor/zuk/z2_plus/z2_plus-vendor.mk)
@@ -29,12 +29,10 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-
-
-
 # Permissions
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilt/etc/permissions/privapp-permissions-mixplorer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mixplorer.xml
+
 # MiCalculator
 PRODUCT_PACKAGES += \
     MiCalculator
@@ -42,9 +40,11 @@ PRODUCT_PACKAGES += \
 # MiXplorer
 PRODUCT_PACKAGES += \
     MiXplorer
+
 # MiXArchive
 PRODUCT_PACKAGES += \
     MiXArchive
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.zuk.rc
