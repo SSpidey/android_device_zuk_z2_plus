@@ -69,6 +69,9 @@ PRODUCT_PACKAGES += \
 # Prebuilts
 PRODUCT_PACKAGES += \
     GalleryGo \
+    GoogleCalendar \
+    CalendarStorage \
+    GoogleDeskClock \
     smsorganizer 
 
 #Vanced Manager
