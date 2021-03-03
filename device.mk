@@ -29,6 +29,13 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.zuk.rc
+
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 # Camera
 PRODUCT_PACKAGES += \
     CameraGo
@@ -49,17 +56,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MiXArchive
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.zuk.rc
-
-# Vendor properties
--include $(LOCAL_PATH)/vendor_prop.mk
-
 # Retro
 PRODUCT_PACKAGES += \
     RetroMusic
-
 
 #FirefoxLite
 PRODUCT_PACKAGES += \
