@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
     GalleryGo \
     GoogleCalendar \
     CalendarStorage \
+    LatinIMEGooglePrebuilt \
     GoogleDeskClock \
     smsorganizer 
 
